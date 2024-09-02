@@ -4,7 +4,7 @@ const { createApp } = Vue
     data() {
       return {
         message: 'Vue Email List',
-        email: ''
+        email: []
       };
     },
     created() {
@@ -12,8 +12,8 @@ const { createApp } = Vue
         axios
             .get('https://flynn.boolean.careers/exercises/api/random/mail')
             .then((response)=> {
-              console.log(i + ": " + response.data.response);
-              this.email = response.data.response;
+              console.log(i + 1 + ": " + response.data.response);
+              this.email.push(response.data.response);
             });
       }
     }
