@@ -14,7 +14,10 @@
     </head>
     <body>
         <div id="app">
-            <h2>
+            <h1>
+                Le tue email sono:
+            </h1>
+            <h2 v-for="item in email" class="green p-2">
                 {{ email }}
             </h2>
         </div>

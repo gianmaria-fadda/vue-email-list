@@ -19,3 +19,9 @@ html {
     margin: 0 auto;
 }
 
+.green {
+    color: green;
+    background-color: lightgreen;
+    width: 25rem;
+}
+
